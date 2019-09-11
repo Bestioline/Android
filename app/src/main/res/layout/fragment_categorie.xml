@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_tutti"
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardBackgroundColor="@color/cast_expanded_controller_ad_label_background_color"
+            app:cardCornerRadius="@dimen/cast_intro_overlay_focus_radius"
+            app:cardElevation="4dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/lin_tutti"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/tutti_dolci"
+                android:persistentDrawingCache="animation"
+                android:theme="@style/Widget.MaterialComponents.CardView">
+
+
+                <TextView
+                    android:id="@+id/text_tutti_dolci"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cast_expanded_controller_ad_label_background_color"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/bubblegum_sans"
+                    android:foregroundGravity="right"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:shadowColor="@color/cast_expanded_controller_background_color"
+                    android:text="TUTTI I DOLCI"
+                    android:textColor="@color/cast_expanded_controller_text_color"
+                    android:textSize="36sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_ciamb"
+                android:layout_width="174dp"
+                android:layout_height="141dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/bordi"
+                android:focusable="true"
+                app:cardCornerRadius="@dimen/activity_horizontal_margin"
+                app:cardElevation="4dp"
+                app:layout_constraintLeft_toRightOf="@+id/card_torte"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_ciambelloni"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:clickable="false"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/ciambellone" />
+
+
+                    <TextView
+                        android:id="@+id/text_ciamb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/cast_expanded_controller_ad_container_white_stripe_color"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="@font/bubblegum_sans"
+                        android:foregroundGravity="right"
+                        android:gravity="top|center"
+                        android:inputType="text"
+                        android:shadowColor="@color/cast_expanded_controller_background_color"
+                        android:text="CIAMBELLONI"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="20sp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteX="10dp" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_torte"
+                android:layout_width="174dp"
+                android:layout_height="141dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/com_facebook_button_login_silver_background_color"
+                app:cardCornerRadius="@dimen/activity_horizontal_margin"
+                app:cardElevation="4dp"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="170dp"
+                    android:layout_height="111dp"
+                    android:clickable="false"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/cake" />
+
+                <TextView
+                    android:id="@+id/text_torta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="7dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/bubblegum_sans"
+                    android:foregroundGravity="right"
+                    android:gravity="bottom|center"
+                    android:inputType="text"
+                    android:shadowColor="@color/cast_expanded_controller_background_color"
+                    android:text="TORTE"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </android.support.v7.widget.CardView>
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:layout_margin="@dimen/keyline_1_minus_8dp"
+            app:cardBackgroundColor="@color/cast_expanded_controller_progress_text_color"
+            app:cardCornerRadius="@dimen/cast_intro_overlay_focus_radius"
+            app:cardElevation="4dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/lin_cheese"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:persistentDrawingCache="animation"
+                android:theme="@style/Widget.MaterialComponents.CardView">
+
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="159dp"
+                    android:layout_height="173dp"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/chees"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/text_chees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:fontFamily="@font/bubblegum_sans"
+                    android:foregroundGravity="right"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:shadowColor="@color/cast_expanded_controller_background_color"
+                    android:text="CHEESECAKE"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView3"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_crostata"
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:layout_margin="@dimen/keyline_1_minus_8dp"
+            app:cardBackgroundColor="@color/cast_expanded_controller_progress_text_color"
+            app:cardCornerRadius="@dimen/cast_intro_overlay_focus_radius"
+            app:cardElevation="4dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/lin_crostata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:persistentDrawingCache="animation"
+                android:theme="@style/Widget.MaterialComponents.CardView">
+
+
+                <ImageView
+                    android:id="@+id/image_crostata"
+                    android:layout_width="232dp"
+                    android:layout_height="137dp"
+                    android:clickable="false"
+                    android:minWidth="100dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/crostata"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/text_crost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:fontFamily="@font/bubblegum_sans"
+                    android:foregroundGravity="right"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:shadowColor="@color/cast_expanded_controller_background_color"
+                    android:text="CROSTATA"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/image_crostata"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_mousse"
+                android:layout_width="174dp"
+                android:layout_height="141dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/cast_expanded_controller_progress_text_color"
+                app:cardCornerRadius="@dimen/activity_horizontal_margin"
+                app:cardElevation="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/card_bisc">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/lin_mousse"
+                    android:layout_width="match_parent"
+                    android:layout_height="141dp"
+                    app:layout_constraintLeft_toRightOf="@+id/lin_bisc"
+                    app:layout_constraintRight_toRightOf="parent">
+
+
+                    <ImageView
+                        android:id="@+id/img_mousse"
+                        android:layout_width="140dp"
+                        android:layout_height="103dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginRight="18dp"
+                        android:clickable="false"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/mousse" />
+
+                    <TextView
+                        android:id="@+id/text_mousse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/bubblegum_sans"
+                        android:foregroundGravity="right"
+                        android:gravity="bottom|center"
+                        android:inputType="text"
+                        android:shadowColor="@color/cast_expanded_controller_background_color"
+                        android:text="MOUSSE"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/img_mousse"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteX="0dp" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_bisc"
+                android:layout_width="174dp"
+                android:layout_height="141dp"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/cast_expanded_controller_progress_text_color"
+                app:cardCornerRadius="@dimen/activity_horizontal_margin"
+                app:cardElevation="4dp"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/lin_bisc"
+                    android:layout_width="match_parent"
+                    android:layout_height="141dp"
+                    android:layout_margin="0dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageViewbisc"
+                        android:layout_width="match_parent"
+                        android:layout_height="111dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginBottom="16dp"
+                        android:clickable="false"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/biscotti" />
+
+                    <TextView
+                        android:id="@+id/text_bisc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/bubblegum_sans"
+                        android:foregroundGravity="right"
+                        android:gravity="bottom|center"
+                        android:inputType="text"
+                        android:shadowColor="@color/cast_expanded_controller_background_color"
+                        android:text="BISCOTTI"
+                        android:textColor="@color/title_text_color"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageViewbisc"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+        </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/sfondo_ddd">
+
+    <TextView
+        android:id="@+id/tNomeRicetta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@color/cast_expanded_controller_progress_text_color"
+        android:fontFamily="@font/artifika"
+        android:foregroundGravity="top"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAllCaps="false"
+        android:textColor="@color/cast_expanded_controller_background_color"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="48dp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_top"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="@color/cast_expanded_controller_progress_text_color"
+        app:cardCornerRadius="@dimen/cast_expanded_controller_control_button_margin"
+        app:cardElevation="2dp"
+        app:layout_constraintCircleRadius="@dimen/activity_vertical_margin"
+        app:layout_constraintTop_toBottomOf="@+id/tNomeRicetta"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/tNomeRicetta">
+
+
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_width="184dp"
+                android:layout_height="fill_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/imageHomeRicetta"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tDescrizione"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/artifika"
+                    android:text="TextView"
+                    android:textColor="@color/cast_expanded_controller_background_color"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="80dp" />
+
+            </ScrollView>
+
+            <ImageView
+                android:id="@+id/imageHomeRicetta"
+                android:layout_width="137dp"
+                android:layout_height="109dp"
+                android:layout_margin="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/cake"
+                tools:ignore="MissingConstraints" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_margin="18dp"
+        android:overScrollMode="ifContentScrolls"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view_top"
+        tools:ignore="MissingConstraints">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+
+            <TextView
+                android:id="@+id/etichetta_ingredienti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/cast_expanded_controller_progress_text_color"
+                android:fontFamily="@font/artifika"
+                android:text="Ingredienti:"
+                android:textColor="@color/cast_expanded_controller_background_color"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tIngredienti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/keyline_1_minus_8dp"
+                android:background="@color/cast_expanded_controller_progress_text_color"
+                android:fontFamily="@font/signika_negative"
+                android:text="TextView"
+                android:textColor="@color/cast_intro_overlay_background_color"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/etichetta_ingredienti"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="80dp" />
+
+            <TextView
+                android:id="@+id/etichetta_ricetta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="14dp"
+                android:background="@color/cast_expanded_controller_progress_text_color"
+                android:fontFamily="@font/artifika"
+                android:text="Ricetta:"
+                android:textColor="@color/cast_expanded_controller_background_color"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tIngredienti" />
+
+            <TextView
+                android:id="@+id/tRicetta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="14dp"
+                android:background="@color/cast_expanded_controller_progress_text_color"
+                android:fontFamily="@font/signika_negative"
+                android:text="TextView"
+                android:textColor="@color/cast_intro_overlay_background_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etichetta_ricetta"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="80dp" />
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_pref"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:background="@drawable/pref"
+        app:layout_constraintBottom_toBottomOf="@+id/tNomeRicetta"
+        app:layout_constraintRight_toRightOf="@+id/tNomeRicetta"
+        app:layout_constraintTop_toTopOf="@+id/tNomeRicetta" />
+
+</android.support.constraint.ConstraintLayout>

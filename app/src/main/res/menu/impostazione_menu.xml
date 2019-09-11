@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/elimina_account"
+        android:icon="@drawable/elimina_account"
+        android:title="Elimina account"></item>
+
+    <item
+        android:id="@+id/esci"
+        android:icon="@drawable/exit"
+        android:title="Logout"></item>
+
+</menu>
