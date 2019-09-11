@@ -3,7 +3,7 @@ package com.example.caterinamaugeri.myapplication;
 public class Ricetta {
 
     private String id, nome, categoria, descrizione, foto, ingredienti, ricetta;
-    private  String o;
+    private  String p;
 
     public Ricetta(String id, String nome, String categoria, String descrizione, String foto, String ingredienti, String ricetta){
         this.id=id;
